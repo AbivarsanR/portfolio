@@ -1,0 +1,65 @@
+body{
+    background-color: lightslategray;
+}
+
+section{
+    height: 500px;
+    width: auto;
+}
+#header1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    top: 0;
+    position: sticky;
+}
+
+#header1 a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    position:sticky;
+}
+
+#About{
+    margin-top: 10%;
+}
+
+ #Home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* background: transparent; */
+    background-color:green;
+    box-shadow: -10px -10px 100px green;
+    margin-left: 90%;
+    bottom: 10px;
+    position: sticky;
+}
+
+#Home a{
+
+    color: white;
+    text-decoration: none;
+}
+
+#image{
+   margin-top: 10px;
+   border-radius: 50%;
+   box-shadow: 10px 10px 200px black;
+}
+
+#exit{
+    display: none;
+}
+#enter{
+    display: none;
+}
