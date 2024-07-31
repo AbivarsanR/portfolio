@@ -11,6 +11,3 @@ function enter(){
     $("#enter").hide();
 }
 
-document.addEventListener('touchstart', function() {
-    document.getElementById('header1').style.display = 'none';
-});
