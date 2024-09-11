@@ -51,6 +51,7 @@ printf("Data =%d\n",temp->info);
 temp=temp->link;
 }
 }
+getch();
 }
 void insertAtFront()
 {
@@ -184,7 +185,9 @@ max = temp-> info;
 temp = temp-> link;
 }
 printf ("\n maximum number is: %d", max);
-}}
+}
+getch();
+}
 
 void mean ()
 {
@@ -207,7 +210,9 @@ count ++;
 
 m= sum/count;
  printf (" \n Mean is %f ", m) ;
-}}
+}
+getch();
+}
 
 void sort ()
 
@@ -374,5 +379,4 @@ default :
 printf ("Incorrect choice \n");
 
 }}
-getch();
 }
