@@ -92,8 +92,10 @@ void insertAtPosition ()
 struct node * temp, * newnode;
 int pos, data, i=1;
 newnode = malloc(sizeof (struct node));
-printf ("\n Enter position and data");
-scanf ("%d %d ", &pos, &data);
+printf ("\n Enter position : ");
+scanf("%d",&pos);
+printf ("\n Enter data : ");
+scanf ("%d ", &data);
 temp = start;
 newnode->info = data;
 newnode->link =0;
@@ -286,26 +288,26 @@ int choice;
 
 while (1) {
 
-printf ( " \n 1 To see list \n");
+printf ( " \n 1 To see list ");
 
-printf ("\n 2 For insertion at starting \n ");
-printf ("\n 3 For Insertion at End \n");
+printf ("\n 2 For insertion at starting ");
+printf ("\n 3 For Insertion at End ");
 printf ("\n 4 for insert at any positions");
-printf ("\n 5 For delete First element \n");
-printf ("\n 6 For delete last element \n");
+printf ("\n 5 For delete First element ");
+printf ("\n 6 For delete last element ");
 
-printf ( "\n 7 for delete element at any position\n");
+printf ( "\n 7 for delete element at any position");
 
-printf ("\n 8 For Find maximum of elements \n");
-printf ("\n 9 To find mean for elements \n");
+printf ("\n 8 For Find maximum of elements ");
+printf ("\n 9 To find mean for elements ");
 
-printf ("\n 10 To sort the elements \n");
+printf ("\n 10 To sort the elements ");
 
-printf ("\n 11 To reverse the linked list \n");
+printf ("\n 11 To reverse the linked list ");
 
-printf ("\n 12 To exit \n");
+printf ("\n 12 To exit ");
 
-printf ("\n Enter choice : \n");
+printf ("\n Enter choice : ");
 
 scanf ("%d", &choice);
 
