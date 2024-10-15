@@ -112,7 +112,7 @@ void deleteFirst ()
 {
 struct node*temp;
 if (start == NULL)
-printf ("\n List in Emplyin");
+printf ("\n List in Empty\n");
 
 else {
     temp = start;
@@ -151,7 +151,7 @@ printf ("\n List is empty \n");
 else
 {
 printf (" \n Enter index");
-scanf ("%d ", &pos);
+scanf ("%d", &pos);
 position= malloc(sizeof (struct node));
 temp = start;
 while (i< pos-1)
@@ -276,7 +276,7 @@ printf ("\n Reverse linked list is:");
 while ( temp != NULL)
 {
 
-printf ("%d", temp->info);
+printf ("%d\t", temp->info);
 temp = temp->link;
 }
 }}
@@ -285,7 +285,7 @@ void main()
 {
 
 int choice;
-
+clrscr();
 while (1) {
 
 printf ( " \n 1 To see list ");
