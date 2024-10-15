@@ -95,7 +95,7 @@ newnode = malloc(sizeof (struct node));
 printf ("\n Enter position : ");
 scanf("%d",&pos);
 printf ("\n Enter data : ");
-scanf ("%d ", &data);
+scanf ("%d", &data);
 temp = start;
 newnode->info = data;
 newnode->link =0;
