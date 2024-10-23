@@ -15,12 +15,12 @@ struct node* search(struct node* ptr, int info);
 void display(struct node* ptr, int level);
 void inorder(struct node* ptr);
 
-int main() {
+void main() {
     bool ht_inc;
     int info;
     int choice;
     struct node* root = NULL;
-
+    clrscr();
     printf("1. Insert\n");
     printf("2. Display\n");
     printf("3. Exit\n");
@@ -59,7 +59,6 @@ int main() {
                 printf("Wrong choice\n");
         }
     }
-    return 0;
 }
 
 struct node* search(struct node* ptr, int info) {
