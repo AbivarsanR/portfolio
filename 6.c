@@ -17,7 +17,8 @@ int main() {
     char ans = 'N';
     int key;
     node *root = NULL;
-
+    node *parent,*temp;
+    clrscr();
     do {
         printf("\n1. Create\n2. Search\n3. Delete\n4. Display\n5. Exit\n");
         printf("Enter your choice: ");
@@ -31,16 +32,16 @@ int main() {
                     scanf("%d", &s->data);
                     insert(&root, s);
                     printf("Do you want to enter more elements? (y/n): ");
-                    ans = getchar(); // To clear newline from buffer
-                    ans = getchar(); // To get the actual input
+                    ans = getch(); 
+                    printf("\n");
                 } while (ans == 'y' || ans == 'Y');
                 break;
 
             case 2:
                 printf("Enter the element to search: ");
                 scanf("%d", &key);
-                node *parent = NULL;
-                node *temp = search(root, key, &parent);
+                parent = NULL;
+                temp = search(root, key, &parent);
                 if (temp) {
                     printf("Element %d found with parent %d\n", temp->data, parent ? parent->data : -1);
                 } else {
